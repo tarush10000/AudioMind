@@ -1,0 +1,34 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.env
+
+# Node.js specific
+node_modules/
+package-lock.json
+yarn.lock
+
+# Next.js specific
+.next/
+out/
+build/
+
+# whisper.cpp build directory
+whisper.cpp/build/
+
+# macOS specific
+.DS_Store
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+*.tmp
+
+.vscode/
+backend/.env
+backend/whisper.cpp
