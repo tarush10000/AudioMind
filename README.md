@@ -31,23 +31,3 @@ The project is organized into the following main parts:
 * **`backend/`:** Contains the Python Flask application that handles audio processing and serves the results. (flask run --port 5001)
 * **`frontend/`:** Contains the Next.js web application that provides the user interface for uploading audio and viewing the analysis results. (npm run dev)
 
-
-## Website Features
-
-The Next.js frontend now includes pages for:
-
-- **Home** – quick links to sign up, log in, pricing and the analysis tool
-- **Analyze** – upload audio and view AI generated insights
-- **Login / Signup** – basic forms ready for future authentication
-- **Pricing** – overview of free and paid plans
-
-The `NEXT_PUBLIC_TIER` environment variable can be set to `free` or `pro` to
-simulate feature limits. In free mode only the first five minutes of analysis
-results are shown.
-
-## Hosting Suggestions
-
-For a low-cost deployment you can host the Next.js app on [Vercel](https://vercel.com)
-using its free tier. The Flask backend can run on a small VM or container service
-such as [Fly.io](https://fly.io) or [Render](https://render.com). Make sure the
-backend URL used in the frontend matches where the Flask service is deployed.
